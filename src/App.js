@@ -46,9 +46,9 @@ componentWillMount(){
     return(
       <div className='main-container'>
         <img src={logo} className='logo'></img>
-      <div className='container' style={{left:`${this.state.isMobile? '50%':'45%'}`}}>
+      <div className='container' style={{left:`${this.state.isMobile? '50%':'45%'}`, width:`${this.state.isMobile ? '100%':''}`}}>
         
-        <h1>Year In Progress</h1>
+        <h1>ear in progress</h1>
         {this.state.isMobile ? <Progress type="circle" percent={(this.state.yearpassed*100).toFixed(2)} size='small' strokeColor='black' /> : <Progress percent={this.state.yearpassed*100} size="small"/>}
         
       </div>
